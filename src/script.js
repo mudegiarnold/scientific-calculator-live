@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .replace("×", "*")
         .replace("÷", "/")
         .replace("%", "*0.01")
+        .replace("–", "-")
         console.log('convertedValue:', convertedValue)
         const result = eval(convertedValue);
         currentValue = result.toString();
