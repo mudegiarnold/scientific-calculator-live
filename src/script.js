@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
         .replace("÷", "/")
         .replace("%", "*0.01")
         .replace("–", "-")
+        .replace("sin", "Math.sin")
+        .replace("cos", "Math.cos")
+        .replace("ln", "Math.log")
+        .replace("𝛑", "Math.PI")
+        .replace("log", "Math.log10")
+        .replace("e", "Math.E")
+        .replace("tan", "Math.tan")
+        .replace("√", "Math.sqrt")
         console.log('convertedValue:', convertedValue)
         const result = eval(convertedValue);
         currentValue = result.toString();
